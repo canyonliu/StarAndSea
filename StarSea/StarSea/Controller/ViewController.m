@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 WayneLiu. All rights reserved.
 //
 
+///lqc
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -16,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+   
 }
 
 - (void)didReceiveMemoryWarning {
