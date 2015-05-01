@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-JTCalendar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -31,6 +36,37 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>223B201E44FA835AD6EECDF2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4561170B05AA3371F2A6D4DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C156F89633D05051652695A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>92DF17FFC0CADC6C587686FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA2CC8AE1D7AF60D12F9C32A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD91482A8C2336FE18488471</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
