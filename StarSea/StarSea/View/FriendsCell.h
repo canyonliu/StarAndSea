@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumLabel;
 @property (weak, nonatomic) IBOutlet UIButton *sendMessageBtn;
+- (IBAction)SendMsgBtn:(id)sender;
 
 @end

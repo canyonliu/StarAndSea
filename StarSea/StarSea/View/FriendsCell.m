@@ -31,4 +31,7 @@
 //    return self;
 //}
 
+- (IBAction)SendMsgBtn:(id)sender {
+    NSLog(@"click send Btn !!");
+}
 @end

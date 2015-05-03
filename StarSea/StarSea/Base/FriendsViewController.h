@@ -10,6 +10,5 @@
 
 @interface FriendsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *frierndsList;
-@property (weak, nonatomic) IBOutlet UIButton *addButoon;
 
 @end

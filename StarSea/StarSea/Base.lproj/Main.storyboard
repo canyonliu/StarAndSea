@@ -18,41 +18,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="noteCollectionCell" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y4h-m2-RfE">
+                                <rect key="frame" x="0.0" y="110" width="320" height="458"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RwP-mP-Zdf">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JQL-b2-Oj2">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="qKX-aa-N0f"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="FeZ-cb-jHv"/>
+                                </connections>
+                            </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaV-x3-ghF" customClass="JTCalendarContentView">
-                                <rect key="frame" x="0.0" y="120" width="320" height="200"/>
+                                <rect key="frame" x="0.0" y="80" width="320" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="aeo-qv-NyA"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAZ-Js-Lak">
-                                <rect key="frame" x="27" y="80" width="50" height="30"/>
-                                <state key="normal" title="Today">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didGoTodayTouch" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VSR-WY-P5H"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6a-lR-Xrr">
-                                <rect key="frame" x="245" y="80" width="50" height="30"/>
-                                <state key="normal" title="Mode">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didChangeModeTouch" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uEc-Nc-0ds"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bLk-nx-MCc" customClass="JTCalendarMenuView">
-                                <rect key="frame" x="85" y="72" width="150" height="32"/>
+                                <rect key="frame" x="120" y="62" width="80" height="20"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSX-fs-R5S">
+                                <rect key="frame" x="0.0" y="280" width="320" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6a-lR-Xrr">
+                                        <rect key="frame" x="260" y="0.0" width="40" height="30"/>
+                                        <state key="normal" title="Mode">
+                                            <color key="titleColor" red="0.29568861769999999" green="0.87243529040000001" blue="0.11392920049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didChangeModeTouch" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uEc-Nc-0ds"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRJ-ls-DJA">
+                                        <rect key="frame" x="10" y="5" width="85" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAZ-Js-Lak">
+                                        <rect key="frame" x="135" y="0.0" width="50" height="30"/>
+                                        <state key="normal" title="Today">
+                                            <color key="titleColor" red="0.29568861769999999" green="0.87243529040000001" blue="0.11392920049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didGoTodayTouch" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VSR-WY-P5H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.54774347729999995" green="0.37438138720000003" blue="0.57123974119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UZ7-yW-NQS"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IaV-x3-ghF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="AUD-du-6Qi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IaV-x3-ghF" secondAttribute="trailing" constant="-16" id="hp6-DY-Dx3"/>
-                            <constraint firstItem="IaV-x3-ghF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="56" id="k6V-he-YfJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IaV-x3-ghF" secondAttribute="trailing" constant="-16" id="0yR-LF-o2G"/>
+                            <constraint firstItem="TSX-fs-R5S" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="7QF-Y3-caj"/>
+                            <constraint firstItem="IaV-x3-ghF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="E8K-Fm-sqn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TSX-fs-R5S" secondAttribute="trailing" constant="-16" id="J4Y-K6-zCL"/>
+                            <constraint firstItem="TSX-fs-R5S" firstAttribute="top" secondItem="IaV-x3-ghF" secondAttribute="bottom" id="MoI-xQ-49x"/>
+                            <constraint firstItem="IaV-x3-ghF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="SxR-5k-12k"/>
+                            <constraint firstItem="TSX-fs-R5S" firstAttribute="leading" secondItem="IaV-x3-ghF" secondAttribute="trailing" constant="-320" id="ffH-m3-85u"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="便签" id="Ixc-mA-hlR"/>
@@ -60,11 +105,13 @@
                         <outlet property="calendarContentView" destination="IaV-x3-ghF" id="VFE-26-7W4"/>
                         <outlet property="calendarContentViewHeight" destination="aeo-qv-NyA" id="zdE-oO-gsm"/>
                         <outlet property="calendarMenuView" destination="bLk-nx-MCc" id="exp-NN-C52"/>
+                        <outlet property="collectionView" destination="Y4h-m2-RfE" id="aiD-Qj-l9A"/>
+                        <outlet property="currentMonthDayWeekday" destination="DRJ-ls-DJA" id="u5N-7E-SAK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="190"/>
+            <point key="canvasLocation" x="110" y="190"/>
         </scene>
         <!--Friends View Controller-->
         <scene sceneID="jV3-bY-Kme">
@@ -101,22 +148,92 @@
                                     <outlet property="delegate" destination="rts-bg-yjt" id="fEo-hx-j4v"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzT-6e-Wfy">
-                                <rect key="frame" x="255" y="500" width="45" height="45"/>
-                                <state key="normal" image="home_ico_play_green-2"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="addButoon" destination="uzT-6e-Wfy" id="x0C-Kd-WJu"/>
                         <outlet property="frierndsList" destination="Wod-Wk-ghf" id="CbS-gd-aHR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLy-8L-Q5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-42" y="850"/>
+        </scene>
+        <!--Detail Friend View Controller-->
+        <scene sceneID="ad4-F1-sms">
+            <objects>
+                <viewController storyboardIdentifier="detailFriendsVC" id="HUf-7p-ivq" customClass="DetailFriendViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RYm-OA-lY5"/>
+                        <viewControllerLayoutGuide type="bottom" id="jcb-vg-IJC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yQS-kc-zdj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="姓名:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nT7-KN-fck">
+                                <rect key="frame" x="73" y="128" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bwc-Ju-3n6">
+                                <rect key="frame" x="137" y="124" width="119" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="邮箱:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnN-nV-2VA">
+                                <rect key="frame" x="73" y="192" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UEZ-iX-srd">
+                                <rect key="frame" x="137" y="188" width="119" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="电话:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87y-QV-jPG">
+                                <rect key="frame" x="73" y="262" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fqw-NF-abh">
+                                <rect key="frame" x="137" y="258" width="119" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF1-m8-I2C">
+                                <rect key="frame" x="121" y="388" width="78" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="发通知">
+                                    <color key="titleColor" red="0.96774384469696972" green="0.21530229552178248" blue="0.28823287932893465" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendNotification:" destination="HUf-7p-ivq" eventType="touchUpInside" id="Cpv-gt-WkC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A43-IS-Ng9">
+                                <rect key="frame" x="130" y="434" width="61" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="打电话">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="TakeAPhone:" destination="HUf-7p-ivq" eventType="touchUpInside" id="TKo-Wp-sZn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBy-sS-VBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392" y="850"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xbg-B8-s2R">
@@ -138,7 +255,4 @@
             <point key="canvasLocation" x="-357" y="183"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="home_ico_play_green-2" width="27" height="27"/>
-    </resources>
 </document>
