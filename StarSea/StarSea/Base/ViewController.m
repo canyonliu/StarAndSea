@@ -10,15 +10,20 @@
 #import "FriendsViewController.h"
 #import "Tools.h"
 #import "NotesCollectionViewCell.h"
+#import "DetailViewController.h"
 //#import "JTCalendarContentView.h"
 
 static NSString *NoteCollectionCellIdentifier = @"noteCollectionCell";
 static NSString *NoteDeatilCellIdentifier = @"noteDetailcell";
 @interface ViewController ()
 
+@property(nonatomic ,strong)NSMutableArray *dataArray;
+
+@property (nonatomic,assign)NSInteger cellCount;
 @end
 
 @implementation ViewController
+
 
 - (void)viewDidLoad
 {
@@ -26,6 +31,9 @@ static NSString *NoteDeatilCellIdentifier = @"noteDetailcell";
     [self setupMode];
     [self setupDateNow];
     [self setupCollectionView];
+    NSArray *array = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9"];
+    _dataArray = [NSMutableArray arrayWithArray:array];
+    //_cellCount = 20;
 
 }
 
@@ -141,7 +149,7 @@ static NSString *NoteDeatilCellIdentifier = @"noteDetailcell";
 //section
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 10;
+    return _dataArray.count;
 }
 //item个数
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -159,12 +167,20 @@ static NSString *NoteDeatilCellIdentifier = @"noteDetailcell";
 {
     //重用cell
     NotesCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NoteDeatilCellIdentifier forIndexPath:indexPath];
+    //添加手势识别
+    UILongPressGestureRecognizer *longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(handlelongPress:)];
+    [cell addGestureRecognizer:longPressGestureRecognizer];
+    longPressGestureRecognizer.minimumPressDuration = 1.0;
+    longPressGestureRecognizer.delegate = self;
+    longPressGestureRecognizer.view.tag = indexPath.section;
+
+    
     //赋值
     
     cell.informTime.text = @"18:25";
     cell.informDetailContent.text = @"嘿,老板,煎饼果子来一套!";
-    cell.inviteAddress.text = @"小铁门";
-    cell.invitePersonPic.image = [UIImage imageNamed:@"test_Pic"];
+    cell.inviteAddress.text = [_dataArray objectAtIndex:indexPath.section];//@"小铁门";
+    cell.invitePersonPic.image = [UIImage imageNamed:@"MUN"];
     [Tools ChoosenImageViewChangeModelToCircle:cell.invitePersonPic];
     
     
@@ -172,7 +188,6 @@ static NSString *NoteDeatilCellIdentifier = @"noteDetailcell";
     return cell;
     
 }
-
 
 
 //定义每个UICollectionViewCell 的大小
@@ -199,12 +214,67 @@ static NSString *NoteDeatilCellIdentifier = @"noteDetailcell";
 {
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     [cell setBackgroundColor:[UIColor greenColor]];
+    
+////*******************////
+//    [_dataArray removeObjectAtIndex:indexPath.row];
+//    [collectionView deleteItemsAtIndexPaths:[NSArray arrayWithObject:indexPath]];
+//    //[self numberOfSectionsInCollectionView:collectionView];
+//    
+////*****************////
+    DetailViewController *DetailNoticeVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"DetailNoticeVC"];
+    
+    [self.navigationController pushViewController:DetailNoticeVC animated:YES];
 }
 //取消选择了某个cell
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     [cell setBackgroundColor:[UIColor redColor]];
+}
+
+
+
+#pragma mark -  手势识别(删除便签)
+-(void)handlelongPress:(UILongPressGestureRecognizer *)recognizer
+{
+    if(recognizer.state == UIGestureRecognizerStateBegan)
+    {
+        NSLog(@"开始触发长按操作%ld",(long)recognizer.view.tag);
+        
+        UIAlertView *alertView  = [[UIAlertView alloc]initWithTitle:@"删除便签" message:@"确定要删除该便签?" delegate:self cancelButtonTitle:@"NO" otherButtonTitles:@"YES", nil];
+        [alertView show];
+        
+        [self.collectionView performBatchUpdates:^{
+            
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:recognizer.view.tag inSection:0];
+            //NSArray *deleteItem = @[indexPath];
+            [_dataArray removeObjectAtIndex:recognizer.view.tag];
+            NSLog(@"...%@",indexPath);
+            //[self.collectionView reloadItemsAtIndexPaths:_dataArray];
+            //[self.collectionView deleteItemsAtIndexPaths:deleteItem];
+            [self.collectionView deleteSections:[NSIndexSet indexSetWithIndex:0]];
+            
+        } completion:^(BOOL finished)
+         {
+             [UIView setAnimationsEnabled:YES];
+         }];
+        
+    }
+    else if (recognizer.state == UIGestureRecognizerStateEnded)
+    {
+        NSLog(@"结束触发长按操作");
+    }
+    [self.collectionView reloadData];
+    //[self.collectionView reloadInputViews];
+    //[self collectionView:self.collectionView numberOfItemsInSection:_dataArray.count];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == 1)
+    {
+        NSLog(@"111122");
+    }
 }
 
 

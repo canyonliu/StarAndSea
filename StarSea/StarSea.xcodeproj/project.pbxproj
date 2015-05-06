@@ -15,6 +15,14 @@
 		9B80381D1AF60D330013EBE6 /* NotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B80381B1AF60D330013EBE6 /* NotesCollectionViewCell.xib */; };
 		9B8038251AF637D20013EBE6 /* UPStackMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8038221AF637D20013EBE6 /* UPStackMenu.m */; };
 		9B8038261AF637D20013EBE6 /* UPStackMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8038241AF637D20013EBE6 /* UPStackMenuItem.m */; };
+		9B8D77671AF8D44200466E41 /* AddNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D77661AF8D44200466E41 /* AddNoticeViewController.m */; };
+		9B8D776A1AF9059F00466E41 /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D77691AF9059F00466E41 /* AddFriendViewController.m */; };
+		9B8D776D1AF9084000466E41 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D776C1AF9084000466E41 /* UserViewController.m */; };
+		9B8D77711AF917B400466E41 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D77701AF917B400466E41 /* AboutViewController.m */; };
+		9B8D77741AF9182600466E41 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D77731AF9182600466E41 /* AccountViewController.m */; };
+		9B8D77771AF9186500466E41 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D77761AF9186500466E41 /* FeedbackViewController.m */; };
+		9B93718F1AF9A56700BF12E7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B93718E1AF9A56700BF12E7 /* LoginViewController.m */; };
+		9B9371921AF9A57C00BF12E7 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9371911AF9A57C00BF12E7 /* RegisterViewController.m */; };
 		9B9E09CC1AEFD50F0077FC2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9E09CA1AEFD50F0077FC2D /* Main.storyboard */; };
 		9BC06E271ADD320C00907C5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC06E261ADD320C00907C5F /* main.m */; };
 		9BC06E321ADD320C00907C5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC06E311ADD320C00907C5F /* Images.xcassets */; };
@@ -55,6 +63,22 @@
 		9B8038221AF637D20013EBE6 /* UPStackMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPStackMenu.m; sourceTree = "<group>"; };
 		9B8038231AF637D20013EBE6 /* UPStackMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPStackMenuItem.h; sourceTree = "<group>"; };
 		9B8038241AF637D20013EBE6 /* UPStackMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPStackMenuItem.m; sourceTree = "<group>"; };
+		9B8D77651AF8D44200466E41 /* AddNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoticeViewController.h; sourceTree = "<group>"; };
+		9B8D77661AF8D44200466E41 /* AddNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoticeViewController.m; sourceTree = "<group>"; };
+		9B8D77681AF9059F00466E41 /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
+		9B8D77691AF9059F00466E41 /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
+		9B8D776B1AF9084000466E41 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		9B8D776C1AF9084000466E41 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		9B8D776F1AF917B400466E41 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		9B8D77701AF917B400466E41 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		9B8D77721AF9182600466E41 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		9B8D77731AF9182600466E41 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		9B8D77751AF9186500466E41 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		9B8D77761AF9186500466E41 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		9B93718D1AF9A56700BF12E7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		9B93718E1AF9A56700BF12E7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		9B9371901AF9A57C00BF12E7 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		9B9371911AF9A57C00BF12E7 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		9B9E09CB1AEFD50F0077FC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BC06E211ADD320C00907C5F /* StarSea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarSea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC06E251ADD320C00907C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,6 +184,30 @@
 			path = UPStackMenu;
 			sourceTree = "<group>";
 		};
+		9B8D776E1AF9177E00466E41 /* UserView */ = {
+			isa = PBXGroup;
+			children = (
+				9B8D776F1AF917B400466E41 /* AboutViewController.h */,
+				9B8D77701AF917B400466E41 /* AboutViewController.m */,
+				9B8D77721AF9182600466E41 /* AccountViewController.h */,
+				9B8D77731AF9182600466E41 /* AccountViewController.m */,
+				9B8D77751AF9186500466E41 /* FeedbackViewController.h */,
+				9B8D77761AF9186500466E41 /* FeedbackViewController.m */,
+			);
+			name = UserView;
+			sourceTree = "<group>";
+		};
+		9B93718C1AF9A55200BF12E7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9B93718D1AF9A56700BF12E7 /* LoginViewController.h */,
+				9B93718E1AF9A56700BF12E7 /* LoginViewController.m */,
+				9B9371901AF9A57C00BF12E7 /* RegisterViewController.h */,
+				9B9371911AF9A57C00BF12E7 /* RegisterViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		9BC06E181ADD320C00907C5F = {
 			isa = PBXGroup;
 			children = (
@@ -242,10 +290,13 @@
 		9BC06E4D1ADD32A100907C5F /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				9B93718C1AF9A55200BF12E7 /* Login */,
 				9BE32D081AF47B900020EFA0 /* ViewController.h */,
 				9BE32D091AF47B900020EFA0 /* ViewController.m */,
 				9BE110C51AF339B0006D97B8 /* FriendsViewController.h */,
 				9BE110C61AF339B0006D97B8 /* FriendsViewController.m */,
+				9B8D776B1AF9084000466E41 /* UserViewController.h */,
+				9B8D776C1AF9084000466E41 /* UserViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -268,6 +319,7 @@
 		9BC06E541ADD32A100907C5F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9B8D776E1AF9177E00466E41 /* UserView */,
 				9BE32D041AF4715A0020EFA0 /* FriendsView */,
 				9BE32D031AF471460020EFA0 /* mianView */,
 			);
@@ -341,6 +393,8 @@
 			children = (
 				9B4D73021ADE27BD004501BC /* DetailViewController.h */,
 				9B4D73031ADE27BD004501BC /* DetailViewController.m */,
+				9B8D77651AF8D44200466E41 /* AddNoticeViewController.h */,
+				9B8D77661AF8D44200466E41 /* AddNoticeViewController.m */,
 			);
 			name = mianView;
 			sourceTree = "<group>";
@@ -350,6 +404,8 @@
 			children = (
 				9BE32D051AF471C90020EFA0 /* DetailFriendViewController.h */,
 				9BE32D061AF471C90020EFA0 /* DetailFriendViewController.m */,
+				9B8D77681AF9059F00466E41 /* AddFriendViewController.h */,
+				9B8D77691AF9059F00466E41 /* AddFriendViewController.m */,
 			);
 			name = FriendsView;
 			sourceTree = "<group>";
@@ -493,16 +549,24 @@
 			files = (
 				9B8038251AF637D20013EBE6 /* UPStackMenu.m in Sources */,
 				9BE110CB1AF33B69006D97B8 /* FriendsCell.m in Sources */,
+				9B8D776A1AF9059F00466E41 /* AddFriendViewController.m in Sources */,
 				9BE32D071AF471C90020EFA0 /* DetailFriendViewController.m in Sources */,
+				9B9371921AF9A57C00BF12E7 /* RegisterViewController.m in Sources */,
+				9B93718F1AF9A56700BF12E7 /* LoginViewController.m in Sources */,
+				9B8D77671AF8D44200466E41 /* AddNoticeViewController.m in Sources */,
 				9BE32D0A1AF47B900020EFA0 /* ViewController.m in Sources */,
+				9B8D776D1AF9084000466E41 /* UserViewController.m in Sources */,
 				9B8038161AF602230013EBE6 /* Tools.m in Sources */,
 				9BE110C71AF339B0006D97B8 /* FriendsViewController.m in Sources */,
 				9BC06E5F1ADD32A100907C5F /* AppDelegate.m in Sources */,
+				9B8D77711AF917B400466E41 /* AboutViewController.m in Sources */,
 				9B8038261AF637D20013EBE6 /* UPStackMenuItem.m in Sources */,
 				9B80381C1AF60D330013EBE6 /* NotesCollectionViewCell.m in Sources */,
+				9B8D77741AF9182600466E41 /* AccountViewController.m in Sources */,
 				9BC06E271ADD320C00907C5F /* main.m in Sources */,
 				9B4D73071ADE27E9004501BC /* UserInfo.m in Sources */,
 				9B4D73041ADE27BD004501BC /* DetailViewController.m in Sources */,
+				9B8D77771AF9186500466E41 /* FeedbackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

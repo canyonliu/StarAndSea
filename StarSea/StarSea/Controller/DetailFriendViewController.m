@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"好友--张雨生";
+    self.title = @"好友详细界面";
 }
 
 - (void)didReceiveMemoryWarning {

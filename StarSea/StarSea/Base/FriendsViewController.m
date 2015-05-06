@@ -10,6 +10,7 @@
 #import "DetailFriendViewController.h"
 #import "FriendsCell.h"
 #import "Tools.h"
+#import "AddFriendViewController.h"
 
 #import "UPStackMenu.h"
 #import "UPStackMenuItem.h"
@@ -155,6 +156,19 @@
                                           cancelButtonTitle:@"Ok"
                                           otherButtonTitles:nil];
     [alert show];
+    
+    //添加联系人
+    if(index == 0)
+    {
+        AddFriendViewController *addFriendVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"addFriendVC"];
+        [self.navigationController pushViewController:addFriendVC animated:YES];
+    }
+    //发通知
+    if(index == 1)
+    {
+        
+    }
+    
 }
 
 @end

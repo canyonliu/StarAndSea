@@ -10,7 +10,7 @@
 
 #import "JTCalendar.h"
 
-@interface ViewController : UIViewController<JTCalendarDataSource,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+@interface ViewController : UIViewController<JTCalendarDataSource,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet JTCalendarMenuView *calendarMenuView;
 @property (weak, nonatomic) IBOutlet JTCalendarContentView *calendarContentView;
@@ -21,6 +21,9 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) JTCalendar *calendar;
+
+
+
 
 @end
 
