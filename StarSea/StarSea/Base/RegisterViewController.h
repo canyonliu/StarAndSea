@@ -10,5 +10,10 @@
 
 @interface RegisterViewController : UIViewController
 - (IBAction)backToLoginVC;
+- (IBAction)jumpToRegisterDetailView;
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+@property (weak, nonatomic) IBOutlet UITextField *userPhoneNumber;
+@property (weak, nonatomic) IBOutlet UITextField *userPassword;
+
 
 @end

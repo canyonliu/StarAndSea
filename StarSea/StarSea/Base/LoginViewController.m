@@ -27,7 +27,20 @@
     [self setupLoginUrbanMsg];
     [self judgeToLogin];
     
+    
 }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    self.navigationController.navigationBarHidden = YES;
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:YES];
+    self.navigationController.navigationBarHidden = NO;
+}
+
 
 -(void)setupLoginUrbanMsg
 {
@@ -52,15 +65,15 @@
 
 - (IBAction)LoginBtn:(id)sender {
     mainVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"MainVC"];
-    if([self.PhoneNumber.text isEqualToString:@"lqc"] && [self.PassWord.text isEqualToString:@"123"])
-    {
+    /*if([self.PhoneNumber.text isEqualToString:@"lqc"] && [self.PassWord.text isEqualToString:@"123"])
+    {*/
 
         //[self.navigationController presentViewController:mainVC animated:YES completion:nil];
         //[self presentViewController:mainVC animated:YES completion:nil];
         [self.navigationController pushViewController:mainVC animated:YES];
          NSLog(@"tiaozhuan");
-    }
-    NSLog(@"tiaozhuan23333");
+   // }
+   // NSLog(@"tiaozhuan23333");
 
 }
 @end

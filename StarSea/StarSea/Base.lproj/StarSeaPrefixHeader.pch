@@ -1,0 +1,67 @@
+//
+//  StarSeaPrefixHeader.pch
+//  StarSea
+//
+//  Created by WayneLiu on 15/5/7.
+//  Copyright (c) 2015年 WayneLiu. All rights reserved.
+//
+
+#ifndef StarSea_StarSeaPrefixHeader_pch
+#define StarSea_StarSeaPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+typedef enum{
+    SAS_Register = 0,
+    SAS_Login,
+    SAS_SynchUserInfo,
+    SAS_ChangePassword,
+    SAS_FindPassword,
+    SAS_UploadPicture,
+    SAS_Feedack,
+    SAS_logout,
+    SAS_GetUserinfo,
+    SAS_SynchProxy,
+    SAS_SynchSystemAccount,
+    SAS_AddNotes,
+    SAS_GetAllNotes,
+   // SAS_GetSubNewsChannel,
+
+}StarSea_ServerIndex;
+
+
+//主地址
+#define URL_SAS_ServerMajorDomain @"http://192.168.1.104:8081/FIND"
+
+#define URL_SAS_Register @""
+#define URL_SAS_Login @""
+#define URL_SAS_SynchUserInfo @""
+#define URL_SAS_ChangePassword @""
+#define URL_SAS_FindPassword @""
+#define URL_SAS_UploadPicture @""
+#define URL_SAS_Feedack @""
+#define URL_SAS_logout @""
+#define URL_SAS_GetUserinfo @""
+#define URL_SAS_SynchProxy @""
+#define URL_SAS_SynchSystemAccount @""
+#define URL_SAS_AddNotes @""
+#define URL_SAS_GetAllNotes @""
+
+
+
+//短信验证的appkey和appSecret
+#define APPKey @"644858a763af"
+#define APPSecret @"84ca82dbbe572f23e6299a5566f79ccf"
+
+//自定义的nslog,debug阶段使用
+#ifdef DEBUG
+#define LQCLog(...) NSLog(__VA_ARGS__)
+#else
+#define LQCLog(...)
+#endif
+
+#endif

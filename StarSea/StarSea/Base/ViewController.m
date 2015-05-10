@@ -27,6 +27,7 @@ static NSString *NoteDeatilCellIdentifier = @"noteDetailcell";
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
     [self setupMode];
     [self setupDateNow];
@@ -41,6 +42,7 @@ static NSString *NoteDeatilCellIdentifier = @"noteDetailcell";
 {
     [super viewDidAppear:animated];
     
+    self.navigationController.navigationBar.hidden = NO;
     [self.calendar reloadData]; // Must be call in viewDidAppear
 }
 

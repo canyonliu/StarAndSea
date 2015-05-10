@@ -10,17 +10,30 @@
 		003D8D11F1730C9B46F0C723 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EE083B26708B8E2C2D49DE /* libPods.a */; };
 		9B4D73041ADE27BD004501BC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D73031ADE27BD004501BC /* DetailViewController.m */; };
 		9B4D73071ADE27E9004501BC /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D73061ADE27E9004501BC /* UserInfo.m */; };
+		9B5A9BD91AFB1CA200A6B651 /* StarSeaServerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A9BD81AFB1CA200A6B651 /* StarSeaServerInterface.m */; };
+		9B5A9BDC1AFB1CCE00A6B651 /* StarSeaServerHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A9BDB1AFB1CCE00A6B651 /* StarSeaServerHttpRequest.m */; };
+		9B5A9BE31AFB4E9300A6B651 /* StarSeaServerParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A9BE21AFB4E9300A6B651 /* StarSeaServerParser.m */; };
+		9B617F8A1AFF8CF60043E3D7 /* FindPasswordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B617F891AFF8CF60043E3D7 /* FindPasswordsViewController.m */; };
+		9B6F28E01AFF0A5A00DA733C /* SMS_SDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B6F28DC1AFF0A5A00DA733C /* SMS_SDKLocalizable.strings */; };
+		9B6F28E11AFF0A5A00DA733C /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6F28DE1AFF0A5A00DA733C /* SMS_SDK.framework */; };
 		9B8038161AF602230013EBE6 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8038151AF602230013EBE6 /* Tools.m */; };
 		9B80381C1AF60D330013EBE6 /* NotesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B80381A1AF60D330013EBE6 /* NotesCollectionViewCell.m */; };
 		9B80381D1AF60D330013EBE6 /* NotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B80381B1AF60D330013EBE6 /* NotesCollectionViewCell.xib */; };
 		9B8038251AF637D20013EBE6 /* UPStackMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8038221AF637D20013EBE6 /* UPStackMenu.m */; };
 		9B8038261AF637D20013EBE6 /* UPStackMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8038241AF637D20013EBE6 /* UPStackMenuItem.m */; };
+		9B81786B1AFF0ACD003D8998 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81786A1AFF0ACD003D8998 /* libicucore.dylib */; };
+		9B81786D1AFF0ADF003D8998 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81786C1AFF0ADF003D8998 /* libz.dylib */; };
+		9B81786F1AFF0AE6003D8998 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81786E1AFF0AE6003D8998 /* MessageUI.framework */; };
+		9B8178711AFF0AF2003D8998 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8178701AFF0AF2003D8998 /* SystemConfiguration.framework */; };
+		9B8178741AFF0AFD003D8998 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8178721AFF0AFD003D8998 /* AddressBook.framework */; };
+		9B8178751AFF0AFD003D8998 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8178731AFF0AFD003D8998 /* AddressBookUI.framework */; };
 		9B8D77671AF8D44200466E41 /* AddNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D77661AF8D44200466E41 /* AddNoticeViewController.m */; };
 		9B8D776A1AF9059F00466E41 /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D77691AF9059F00466E41 /* AddFriendViewController.m */; };
 		9B8D776D1AF9084000466E41 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D776C1AF9084000466E41 /* UserViewController.m */; };
 		9B8D77711AF917B400466E41 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D77701AF917B400466E41 /* AboutViewController.m */; };
 		9B8D77741AF9182600466E41 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D77731AF9182600466E41 /* AccountViewController.m */; };
 		9B8D77771AF9186500466E41 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D77761AF9186500466E41 /* FeedbackViewController.m */; };
+		9B91050A1AFF0F1D0049211E /* RegisterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9105091AFF0F1D0049211E /* RegisterDetailViewController.m */; };
 		9B93718F1AF9A56700BF12E7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B93718E1AF9A56700BF12E7 /* LoginViewController.m */; };
 		9B9371921AF9A57C00BF12E7 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9371911AF9A57C00BF12E7 /* RegisterViewController.m */; };
 		9B9E09CC1AEFD50F0077FC2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9E09CA1AEFD50F0077FC2D /* Main.storyboard */; };
@@ -54,6 +67,18 @@
 		9B4D73031ADE27BD004501BC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		9B4D73051ADE27E9004501BC /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		9B4D73061ADE27E9004501BC /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		9B5A9BD71AFB1CA200A6B651 /* StarSeaServerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarSeaServerInterface.h; sourceTree = "<group>"; };
+		9B5A9BD81AFB1CA200A6B651 /* StarSeaServerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarSeaServerInterface.m; sourceTree = "<group>"; };
+		9B5A9BDA1AFB1CCE00A6B651 /* StarSeaServerHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarSeaServerHttpRequest.h; sourceTree = "<group>"; };
+		9B5A9BDB1AFB1CCE00A6B651 /* StarSeaServerHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarSeaServerHttpRequest.m; sourceTree = "<group>"; };
+		9B5A9BE01AFB265F00A6B651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/StarSeaPrefixHeader.pch; sourceTree = "<group>"; };
+		9B5A9BE11AFB4E9300A6B651 /* StarSeaServerParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarSeaServerParser.h; sourceTree = "<group>"; };
+		9B5A9BE21AFB4E9300A6B651 /* StarSeaServerParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarSeaServerParser.m; sourceTree = "<group>"; };
+		9B617F881AFF8CF60043E3D7 /* FindPasswordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordsViewController.h; sourceTree = "<group>"; };
+		9B617F891AFF8CF60043E3D7 /* FindPasswordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPasswordsViewController.m; sourceTree = "<group>"; };
+		9B6F28DD1AFF0A5A00DA733C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SMS_SDKLocalizable.strings; sourceTree = "<group>"; };
+		9B6F28DE1AFF0A5A00DA733C /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		9B6F28DF1AFF0A5A00DA733C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SMS_SDKLocalizable.strings"; sourceTree = "<group>"; };
 		9B8038141AF602230013EBE6 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		9B8038151AF602230013EBE6 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		9B8038191AF60D330013EBE6 /* NotesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesCollectionViewCell.h; sourceTree = "<group>"; };
@@ -63,6 +88,12 @@
 		9B8038221AF637D20013EBE6 /* UPStackMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPStackMenu.m; sourceTree = "<group>"; };
 		9B8038231AF637D20013EBE6 /* UPStackMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPStackMenuItem.h; sourceTree = "<group>"; };
 		9B8038241AF637D20013EBE6 /* UPStackMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPStackMenuItem.m; sourceTree = "<group>"; };
+		9B81786A1AFF0ACD003D8998 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		9B81786C1AFF0ADF003D8998 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9B81786E1AFF0AE6003D8998 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9B8178701AFF0AF2003D8998 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9B8178721AFF0AFD003D8998 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		9B8178731AFF0AFD003D8998 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		9B8D77651AF8D44200466E41 /* AddNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoticeViewController.h; sourceTree = "<group>"; };
 		9B8D77661AF8D44200466E41 /* AddNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoticeViewController.m; sourceTree = "<group>"; };
 		9B8D77681AF9059F00466E41 /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
@@ -75,10 +106,12 @@
 		9B8D77731AF9182600466E41 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		9B8D77751AF9186500466E41 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
 		9B8D77761AF9186500466E41 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		9B9105081AFF0F1D0049211E /* RegisterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterDetailViewController.h; sourceTree = "<group>"; };
+		9B9105091AFF0F1D0049211E /* RegisterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterDetailViewController.m; sourceTree = "<group>"; };
 		9B93718D1AF9A56700BF12E7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		9B93718E1AF9A56700BF12E7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		9B9371901AF9A57C00BF12E7 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
-		9B9371911AF9A57C00BF12E7 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		9B9371901AF9A57C00BF12E7 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = ../Base/RegisterViewController.h; sourceTree = "<group>"; };
+		9B9371911AF9A57C00BF12E7 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = ../Base/RegisterViewController.m; sourceTree = "<group>"; };
 		9B9E09CB1AEFD50F0077FC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BC06E211ADD320C00907C5F /* StarSea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarSea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC06E251ADD320C00907C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +139,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8178741AFF0AFD003D8998 /* AddressBook.framework in Frameworks */,
+				9B8178751AFF0AFD003D8998 /* AddressBookUI.framework in Frameworks */,
+				9B8178711AFF0AF2003D8998 /* SystemConfiguration.framework in Frameworks */,
+				9B81786F1AFF0AE6003D8998 /* MessageUI.framework in Frameworks */,
+				9B81786D1AFF0ADF003D8998 /* libz.dylib in Frameworks */,
+				9B81786B1AFF0ACD003D8998 /* libicucore.dylib in Frameworks */,
+				9B6F28E11AFF0A5A00DA733C /* SMS_SDK.framework in Frameworks */,
 				003D8D11F1730C9B46F0C723 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,9 +172,37 @@
 		97457CE4CF9A55909413E986 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B8178721AFF0AFD003D8998 /* AddressBook.framework */,
+				9B8178731AFF0AFD003D8998 /* AddressBookUI.framework */,
+				9B8178701AFF0AF2003D8998 /* SystemConfiguration.framework */,
+				9B81786E1AFF0AE6003D8998 /* MessageUI.framework */,
+				9B81786C1AFF0ADF003D8998 /* libz.dylib */,
+				9B81786A1AFF0ACD003D8998 /* libicucore.dylib */,
 				99EE083B26708B8E2C2D49DE /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B5A9BD61AFB1C6200A6B651 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9B5A9BD71AFB1CA200A6B651 /* StarSeaServerInterface.h */,
+				9B5A9BD81AFB1CA200A6B651 /* StarSeaServerInterface.m */,
+				9B5A9BDA1AFB1CCE00A6B651 /* StarSeaServerHttpRequest.h */,
+				9B5A9BDB1AFB1CCE00A6B651 /* StarSeaServerHttpRequest.m */,
+				9B5A9BE11AFB4E9300A6B651 /* StarSeaServerParser.h */,
+				9B5A9BE21AFB4E9300A6B651 /* StarSeaServerParser.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9B6F28DB1AFF0A5A00DA733C /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				9B6F28DC1AFF0A5A00DA733C /* SMS_SDKLocalizable.strings */,
+				9B6F28DE1AFF0A5A00DA733C /* SMS_SDK.framework */,
+			);
+			path = SMS_SDK;
 			sourceTree = "<group>";
 		};
 		9B8038171AF60CDE0013EBE6 /* Friends */ = {
@@ -160,6 +228,7 @@
 		9B80381E1AF637930013EBE6 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				9B6F28DB1AFF0A5A00DA733C /* SMS_SDK */,
 				9B80381F1AF637AC0013EBE6 /* PopMenu */,
 			);
 			path = Lib;
@@ -197,13 +266,24 @@
 			name = UserView;
 			sourceTree = "<group>";
 		};
+		9B9105071AFF0EF70049211E /* RegisterAndFindPsw */ = {
+			isa = PBXGroup;
+			children = (
+				9B9371901AF9A57C00BF12E7 /* RegisterViewController.h */,
+				9B9371911AF9A57C00BF12E7 /* RegisterViewController.m */,
+				9B9105081AFF0F1D0049211E /* RegisterDetailViewController.h */,
+				9B9105091AFF0F1D0049211E /* RegisterDetailViewController.m */,
+				9B617F881AFF8CF60043E3D7 /* FindPasswordsViewController.h */,
+				9B617F891AFF8CF60043E3D7 /* FindPasswordsViewController.m */,
+			);
+			name = RegisterAndFindPsw;
+			sourceTree = "<group>";
+		};
 		9B93718C1AF9A55200BF12E7 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				9B93718D1AF9A56700BF12E7 /* LoginViewController.h */,
 				9B93718E1AF9A56700BF12E7 /* LoginViewController.m */,
-				9B9371901AF9A57C00BF12E7 /* RegisterViewController.h */,
-				9B9371911AF9A57C00BF12E7 /* RegisterViewController.m */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -239,7 +319,7 @@
 				9BC06E571ADD32A100907C5F /* Database */,
 				9BC06E581ADD32A100907C5F /* Handler */,
 				9BC06E591ADD32A100907C5F /* Model */,
-				9BC06E5A1ADD32A100907C5F /* Network */,
+				9B5A9BD61AFB1C6200A6B651 /* Network */,
 				9BC06E5B1ADD32A100907C5F /* Resource */,
 				9BC06E5C1ADD32A100907C5F /* Storage */,
 				9B80381E1AF637930013EBE6 /* Lib */,
@@ -255,6 +335,7 @@
 		9BC06E241ADD320C00907C5F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9B5A9BDF1AFB265F00A6B651 /* StarSeaPrefixHeader.pch */,
 				9BC06E251ADD320C00907C5F /* Info.plist */,
 				9BC06E261ADD320C00907C5F /* main.m */,
 			);
@@ -319,6 +400,7 @@
 		9BC06E541ADD32A100907C5F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9B9105071AFF0EF70049211E /* RegisterAndFindPsw */,
 				9B8D776E1AF9177E00466E41 /* UserView */,
 				9BE32D041AF4715A0020EFA0 /* FriendsView */,
 				9BE32D031AF471460020EFA0 /* mianView */,
@@ -347,13 +429,6 @@
 				9B4D73061ADE27E9004501BC /* UserInfo.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		9BC06E5A1ADD32A100907C5F /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		9BC06E5B1ADD32A100907C5F /* Resource */ = {
@@ -461,6 +536,7 @@
 				TargetAttributes = {
 					9BC06E201ADD320C00907C5F = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = M892P9SSGG;
 					};
 					9BC06E391ADD320C00907C5F = {
 						CreatedOnToolsVersion = 6.2;
@@ -475,6 +551,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 9BC06E181ADD320C00907C5F;
 			productRefGroup = 9BC06E221ADD320C00907C5F /* Products */;
@@ -496,6 +573,7 @@
 				9B9E09CC1AEFD50F0077FC2D /* Main.storyboard in Resources */,
 				9BC06E601ADD32A100907C5F /* LaunchScreen.xib in Resources */,
 				9BC06E321ADD320C00907C5F /* Images.xcassets in Resources */,
+				9B6F28E01AFF0A5A00DA733C /* SMS_SDKLocalizable.strings in Resources */,
 				9BE110CC1AF33B69006D97B8 /* FriendsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +625,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B91050A1AFF0F1D0049211E /* RegisterDetailViewController.m in Sources */,
+				9B5A9BE31AFB4E9300A6B651 /* StarSeaServerParser.m in Sources */,
 				9B8038251AF637D20013EBE6 /* UPStackMenu.m in Sources */,
 				9BE110CB1AF33B69006D97B8 /* FriendsCell.m in Sources */,
 				9B8D776A1AF9059F00466E41 /* AddFriendViewController.m in Sources */,
@@ -554,7 +634,9 @@
 				9B9371921AF9A57C00BF12E7 /* RegisterViewController.m in Sources */,
 				9B93718F1AF9A56700BF12E7 /* LoginViewController.m in Sources */,
 				9B8D77671AF8D44200466E41 /* AddNoticeViewController.m in Sources */,
+				9B5A9BD91AFB1CA200A6B651 /* StarSeaServerInterface.m in Sources */,
 				9BE32D0A1AF47B900020EFA0 /* ViewController.m in Sources */,
+				9B617F8A1AFF8CF60043E3D7 /* FindPasswordsViewController.m in Sources */,
 				9B8D776D1AF9084000466E41 /* UserViewController.m in Sources */,
 				9B8038161AF602230013EBE6 /* Tools.m in Sources */,
 				9BE110C71AF339B0006D97B8 /* FriendsViewController.m in Sources */,
@@ -562,6 +644,7 @@
 				9B8D77711AF917B400466E41 /* AboutViewController.m in Sources */,
 				9B8038261AF637D20013EBE6 /* UPStackMenuItem.m in Sources */,
 				9B80381C1AF60D330013EBE6 /* NotesCollectionViewCell.m in Sources */,
+				9B5A9BDC1AFB1CCE00A6B651 /* StarSeaServerHttpRequest.m in Sources */,
 				9B8D77741AF9182600466E41 /* AccountViewController.m in Sources */,
 				9BC06E271ADD320C00907C5F /* main.m in Sources */,
 				9B4D73071ADE27E9004501BC /* UserInfo.m in Sources */,
@@ -589,6 +672,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9B5A9BDF1AFB265F00A6B651 /* StarSeaPrefixHeader.pch */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B5A9BE01AFB265F00A6B651 /* Base */,
+			);
+			name = StarSeaPrefixHeader.pch;
+			sourceTree = "<group>";
+		};
+		9B6F28DC1AFF0A5A00DA733C /* SMS_SDKLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B6F28DD1AFF0A5A00DA733C /* en */,
+				9B6F28DF1AFF0A5A00DA733C /* zh-Hans */,
+			);
+			name = SMS_SDKLocalizable.strings;
+			sourceTree = "<group>";
+		};
 		9B9E09CA1AEFD50F0077FC2D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -631,6 +731,8 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/WayneLiu_Mac/Desktop/StarAndSea/StarSea/StarSea/Base.lproj/StarSeaPrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -642,7 +744,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -671,13 +773,15 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/WayneLiu_Mac/Desktop/StarAndSea/StarSea/StarSea/Base.lproj/StarSeaPrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -689,8 +793,14 @@
 			baseConfigurationReference = 0B53599B0817483FE2F54672 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StarSea/Storage/SMS_SDK",
+					"$(PROJECT_DIR)/StarSea/Lib/SMS_SDK",
+				);
 				INFOPLIST_FILE = StarSea/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -702,8 +812,14 @@
 			baseConfigurationReference = 95D4CCAC19520F6AA1228055 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StarSea/Storage/SMS_SDK",
+					"$(PROJECT_DIR)/StarSea/Lib/SMS_SDK",
+				);
 				INFOPLIST_FILE = StarSea/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;

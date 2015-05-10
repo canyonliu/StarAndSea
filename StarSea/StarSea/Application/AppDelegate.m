@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <SMS_SDK/SMS_SDK.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[UINavigationBar appearance]setBarTintColor:[UIColor colorWithRed:130/255.f green:184/255.f blue:185/255.f alpha:1.0]];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:65/255.f green:184/255.f blue:231/255.f alpha:1.0]];
+    //设置半透明属性
+//    [[UINavigationBar appearance] setTranslucent:NO];
+//    
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
     
     //    //*********//
     //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -32,7 +40,12 @@
     //    
     //    
 
-    
+    /**
+     *  @author LQC
+     *
+     *  设置短信的APPkey和APPsecret
+     */
+    [SMS_SDK registerApp:APPKey withSecret:APPSecret];
     
     return YES;
 }
