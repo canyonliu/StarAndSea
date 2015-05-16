@@ -175,7 +175,7 @@ static int count = 0;
     
     LQCLog(@"click---%s",__FUNCTION__);
     //[self dismissViewControllerAnimated:YES completion:nil];
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    //[self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 
@@ -222,15 +222,23 @@ static int count = 0;
     if (alertView==_alert2) {
         if (0==buttonIndex)
         {
-            [self dismissViewControllerAnimated:YES completion:^{
-                [_timer2 invalidate];
-                [_timer1 invalidate];
-            }];
+            [self.navigationController popToRootViewControllerAnimated:YES];
+            [_timer2 invalidate];
+            [_timer1 invalidate];
+//            [self dismissViewControllerAnimated:YES completion:^{
+//                [_timer2 invalidate];
+//                [_timer1 invalidate];
+//            }];
         }
     }
     
     if (alertView==_alert3)
     {
+        /**
+         *  @author LQC
+         *
+         *  暂时先注册成功后回到登录页面,以后再改
+         */
         ViewController* mianVC= [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"MainVC"];
         
 

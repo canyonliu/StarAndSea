@@ -16,13 +16,20 @@
 		9B617F8A1AFF8CF60043E3D7 /* FindPasswordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B617F891AFF8CF60043E3D7 /* FindPasswordsViewController.m */; };
 		9B6F28E01AFF0A5A00DA733C /* SMS_SDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B6F28DC1AFF0A5A00DA733C /* SMS_SDKLocalizable.strings */; };
 		9B6F28E11AFF0A5A00DA733C /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6F28DE1AFF0A5A00DA733C /* SMS_SDK.framework */; };
+		9B7526EC1B02250300BA5451 /* NSDictionary-DeepMutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7526E51B02250300BA5451 /* NSDictionary-DeepMutableCopy.m */; };
+		9B7526ED1B02250300BA5451 /* SMS_HYZBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7526E71B02250300BA5451 /* SMS_HYZBadgeView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9B7526FC1B02272D00BA5451 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7526F51B02272D00BA5451 /* CustomCell.m */; };
+		9B7526FD1B02272D00BA5451 /* InvitationViewControllerEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7526F71B02272D00BA5451 /* InvitationViewControllerEx.m */; };
+		9B7526FE1B02272D00BA5451 /* SectionsViewControllerFriends.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7526F91B02272D00BA5451 /* SectionsViewControllerFriends.m */; };
+		9B7527031B023C0B00BA5451 /* smssdk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B7527021B023C0B00BA5451 /* smssdk.bundle */; };
+		9B7F86801B04C03D003B66DE /* NotesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7F867E1B04C03D003B66DE /* NotesTableViewCell.m */; };
+		9B7F86811B04C03D003B66DE /* NotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7F867F1B04C03D003B66DE /* NotesTableViewCell.xib */; };
 		9B8038161AF602230013EBE6 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8038151AF602230013EBE6 /* Tools.m */; };
 		9B80381C1AF60D330013EBE6 /* NotesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B80381A1AF60D330013EBE6 /* NotesCollectionViewCell.m */; };
 		9B80381D1AF60D330013EBE6 /* NotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B80381B1AF60D330013EBE6 /* NotesCollectionViewCell.xib */; };
 		9B8038251AF637D20013EBE6 /* UPStackMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8038221AF637D20013EBE6 /* UPStackMenu.m */; };
 		9B8038261AF637D20013EBE6 /* UPStackMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8038241AF637D20013EBE6 /* UPStackMenuItem.m */; };
 		9B81786B1AFF0ACD003D8998 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81786A1AFF0ACD003D8998 /* libicucore.dylib */; };
-		9B81786D1AFF0ADF003D8998 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81786C1AFF0ADF003D8998 /* libz.dylib */; };
 		9B81786F1AFF0AE6003D8998 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81786E1AFF0AE6003D8998 /* MessageUI.framework */; };
 		9B8178711AFF0AF2003D8998 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8178701AFF0AF2003D8998 /* SystemConfiguration.framework */; };
 		9B8178741AFF0AFD003D8998 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8178721AFF0AFD003D8998 /* AddressBook.framework */; };
@@ -79,6 +86,21 @@
 		9B6F28DD1AFF0A5A00DA733C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SMS_SDKLocalizable.strings; sourceTree = "<group>"; };
 		9B6F28DE1AFF0A5A00DA733C /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
 		9B6F28DF1AFF0A5A00DA733C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SMS_SDKLocalizable.strings"; sourceTree = "<group>"; };
+		9B7526E41B02250300BA5451 /* NSDictionary-DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-DeepMutableCopy.h"; sourceTree = "<group>"; };
+		9B7526E51B02250300BA5451 /* NSDictionary-DeepMutableCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary-DeepMutableCopy.m"; sourceTree = "<group>"; };
+		9B7526E61B02250300BA5451 /* SMS_HYZBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMS_HYZBadgeView.h; sourceTree = "<group>"; };
+		9B7526E71B02250300BA5451 /* SMS_HYZBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMS_HYZBadgeView.m; sourceTree = "<group>"; };
+		9B7526F41B02272D00BA5451 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		9B7526F51B02272D00BA5451 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		9B7526F61B02272D00BA5451 /* InvitationViewControllerEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvitationViewControllerEx.h; sourceTree = "<group>"; };
+		9B7526F71B02272D00BA5451 /* InvitationViewControllerEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvitationViewControllerEx.m; sourceTree = "<group>"; };
+		9B7526F81B02272D00BA5451 /* SectionsViewControllerFriends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsViewControllerFriends.h; sourceTree = "<group>"; };
+		9B7526F91B02272D00BA5451 /* SectionsViewControllerFriends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionsViewControllerFriends.m; sourceTree = "<group>"; };
+		9B7527001B02296500BA5451 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9B7527021B023C0B00BA5451 /* smssdk.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = smssdk.bundle; sourceTree = "<group>"; };
+		9B7F867D1B04C03D003B66DE /* NotesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesTableViewCell.h; sourceTree = "<group>"; };
+		9B7F867E1B04C03D003B66DE /* NotesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesTableViewCell.m; sourceTree = "<group>"; };
+		9B7F867F1B04C03D003B66DE /* NotesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotesTableViewCell.xib; sourceTree = "<group>"; };
 		9B8038141AF602230013EBE6 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		9B8038151AF602230013EBE6 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		9B8038191AF60D330013EBE6 /* NotesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesCollectionViewCell.h; sourceTree = "<group>"; };
@@ -143,7 +165,6 @@
 				9B8178751AFF0AFD003D8998 /* AddressBookUI.framework in Frameworks */,
 				9B8178711AFF0AF2003D8998 /* SystemConfiguration.framework in Frameworks */,
 				9B81786F1AFF0AE6003D8998 /* MessageUI.framework in Frameworks */,
-				9B81786D1AFF0ADF003D8998 /* libz.dylib in Frameworks */,
 				9B81786B1AFF0ACD003D8998 /* libicucore.dylib in Frameworks */,
 				9B6F28E11AFF0A5A00DA733C /* SMS_SDK.framework in Frameworks */,
 				003D8D11F1730C9B46F0C723 /* libPods.a in Frameworks */,
@@ -172,6 +193,7 @@
 		97457CE4CF9A55909413E986 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B7527001B02296500BA5451 /* Foundation.framework */,
 				9B8178721AFF0AFD003D8998 /* AddressBook.framework */,
 				9B8178731AFF0AFD003D8998 /* AddressBookUI.framework */,
 				9B8178701AFF0AF2003D8998 /* SystemConfiguration.framework */,
@@ -205,6 +227,31 @@
 			path = SMS_SDK;
 			sourceTree = "<group>";
 		};
+		9B7526D91B02213D00BA5451 /* addFriendsFromContactbook */ = {
+			isa = PBXGroup;
+			children = (
+				9B7526F41B02272D00BA5451 /* CustomCell.h */,
+				9B7526F51B02272D00BA5451 /* CustomCell.m */,
+				9B7527021B023C0B00BA5451 /* smssdk.bundle */,
+				9B7526F61B02272D00BA5451 /* InvitationViewControllerEx.h */,
+				9B7526F71B02272D00BA5451 /* InvitationViewControllerEx.m */,
+				9B7526F81B02272D00BA5451 /* SectionsViewControllerFriends.h */,
+				9B7526F91B02272D00BA5451 /* SectionsViewControllerFriends.m */,
+			);
+			path = addFriendsFromContactbook;
+			sourceTree = "<group>";
+		};
+		9B7526E31B02250300BA5451 /* SMS_UILib */ = {
+			isa = PBXGroup;
+			children = (
+				9B7526E41B02250300BA5451 /* NSDictionary-DeepMutableCopy.h */,
+				9B7526E51B02250300BA5451 /* NSDictionary-DeepMutableCopy.m */,
+				9B7526E61B02250300BA5451 /* SMS_HYZBadgeView.h */,
+				9B7526E71B02250300BA5451 /* SMS_HYZBadgeView.m */,
+			);
+			path = SMS_UILib;
+			sourceTree = "<group>";
+		};
 		9B8038171AF60CDE0013EBE6 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +268,9 @@
 				9B8038191AF60D330013EBE6 /* NotesCollectionViewCell.h */,
 				9B80381A1AF60D330013EBE6 /* NotesCollectionViewCell.m */,
 				9B80381B1AF60D330013EBE6 /* NotesCollectionViewCell.xib */,
+				9B7F867D1B04C03D003B66DE /* NotesTableViewCell.h */,
+				9B7F867E1B04C03D003B66DE /* NotesTableViewCell.m */,
+				9B7F867F1B04C03D003B66DE /* NotesTableViewCell.xib */,
 			);
 			name = MainView;
 			sourceTree = "<group>";
@@ -229,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				9B6F28DB1AFF0A5A00DA733C /* SMS_SDK */,
+				9B7526E31B02250300BA5451 /* SMS_UILib */,
 				9B80381F1AF637AC0013EBE6 /* PopMenu */,
 			);
 			path = Lib;
@@ -477,6 +528,7 @@
 		9BE32D041AF4715A0020EFA0 /* FriendsView */ = {
 			isa = PBXGroup;
 			children = (
+				9B7526D91B02213D00BA5451 /* addFriendsFromContactbook */,
 				9BE32D051AF471C90020EFA0 /* DetailFriendViewController.h */,
 				9BE32D061AF471C90020EFA0 /* DetailFriendViewController.m */,
 				9B8D77681AF9059F00466E41 /* AddFriendViewController.h */,
@@ -572,9 +624,11 @@
 				9B80381D1AF60D330013EBE6 /* NotesCollectionViewCell.xib in Resources */,
 				9B9E09CC1AEFD50F0077FC2D /* Main.storyboard in Resources */,
 				9BC06E601ADD32A100907C5F /* LaunchScreen.xib in Resources */,
+				9B7F86811B04C03D003B66DE /* NotesTableViewCell.xib in Resources */,
 				9BC06E321ADD320C00907C5F /* Images.xcassets in Resources */,
 				9B6F28E01AFF0A5A00DA733C /* SMS_SDKLocalizable.strings in Resources */,
 				9BE110CC1AF33B69006D97B8 /* FriendsCell.xib in Resources */,
+				9B7527031B023C0B00BA5451 /* smssdk.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +680,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B91050A1AFF0F1D0049211E /* RegisterDetailViewController.m in Sources */,
+				9B7F86801B04C03D003B66DE /* NotesTableViewCell.m in Sources */,
+				9B7526ED1B02250300BA5451 /* SMS_HYZBadgeView.m in Sources */,
 				9B5A9BE31AFB4E9300A6B651 /* StarSeaServerParser.m in Sources */,
 				9B8038251AF637D20013EBE6 /* UPStackMenu.m in Sources */,
 				9BE110CB1AF33B69006D97B8 /* FriendsCell.m in Sources */,
@@ -634,8 +690,10 @@
 				9B9371921AF9A57C00BF12E7 /* RegisterViewController.m in Sources */,
 				9B93718F1AF9A56700BF12E7 /* LoginViewController.m in Sources */,
 				9B8D77671AF8D44200466E41 /* AddNoticeViewController.m in Sources */,
+				9B7526FE1B02272D00BA5451 /* SectionsViewControllerFriends.m in Sources */,
 				9B5A9BD91AFB1CA200A6B651 /* StarSeaServerInterface.m in Sources */,
 				9BE32D0A1AF47B900020EFA0 /* ViewController.m in Sources */,
+				9B7526FC1B02272D00BA5451 /* CustomCell.m in Sources */,
 				9B617F8A1AFF8CF60043E3D7 /* FindPasswordsViewController.m in Sources */,
 				9B8D776D1AF9084000466E41 /* UserViewController.m in Sources */,
 				9B8038161AF602230013EBE6 /* Tools.m in Sources */,
@@ -645,8 +703,10 @@
 				9B8038261AF637D20013EBE6 /* UPStackMenuItem.m in Sources */,
 				9B80381C1AF60D330013EBE6 /* NotesCollectionViewCell.m in Sources */,
 				9B5A9BDC1AFB1CCE00A6B651 /* StarSeaServerHttpRequest.m in Sources */,
+				9B7526FD1B02272D00BA5451 /* InvitationViewControllerEx.m in Sources */,
 				9B8D77741AF9182600466E41 /* AccountViewController.m in Sources */,
 				9BC06E271ADD320C00907C5F /* main.m in Sources */,
+				9B7526EC1B02250300BA5451 /* NSDictionary-DeepMutableCopy.m in Sources */,
 				9B4D73071ADE27E9004501BC /* UserInfo.m in Sources */,
 				9B4D73041ADE27BD004501BC /* DetailViewController.m in Sources */,
 				9B8D77771AF9186500466E41 /* FeedbackViewController.m in Sources */,
@@ -747,6 +807,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -793,6 +854,7 @@
 			baseConfigurationReference = 0B53599B0817483FE2F54672 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -802,6 +864,26 @@
 				INFOPLIST_FILE = StarSea/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-ASIHTTPRequest\"",
+					"-l\"Pods-JTCalendar\"",
+					"-l\"Pods-MBProgressHUD\"",
+					"-l\"Pods-Reachability\"",
+					"-l\"Pods-RegexKitLite\"",
+					"-l\"icucore\"",
+					"-l\"xml2.2\"",
+					"-l\"z.1\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -812,6 +894,7 @@
 			baseConfigurationReference = 95D4CCAC19520F6AA1228055 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -821,6 +904,27 @@
 				INFOPLIST_FILE = StarSea/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-ASIHTTPRequest\"",
+					"-l\"Pods-JTCalendar\"",
+					"-l\"Pods-MBProgressHUD\"",
+					"-l\"Pods-Reachability\"",
+					"-l\"Pods-RegexKitLite\"",
+					"-l\"icucore\"",
+					"-l\"xml2.2\"",
+					"-l\"z.1\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

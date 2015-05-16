@@ -7,8 +7,15 @@
 //
 
 #import "AddFriendViewController.h"
+#import "SectionsViewControllerFriends.h"
+#import "InvitationViewControllerEx.h"
+#import <SMS_SDK/SMS_SDK.h>
 
 @interface AddFriendViewController ()
+{
+    SectionsViewControllerFriends * _friendsController;
+}
+- (IBAction)addFriendsFromContactBook:(id)sender;
 
 @end
 
@@ -19,19 +26,35 @@
     self.title = @"添加联系人";
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)addFriendsFromContactBook:(id)sender {
+
+        NSLog(@"show my friends");
+        //[_testView setNumber:0];
+        
+        SectionsViewControllerFriends* friends=[[SectionsViewControllerFriends alloc] init];
+        _friendsController=friends;
+        
+        [_friendsController setMyBlock:friends.friendsBlock];
+        
+        //[SMS_MBProgressHUD showMessag:@"正在加载中..." toView:self.view];
+        
+        [SMS_SDK getAppContactFriends:1 result:^(enum SMS_ResponseState state, NSArray *array) {
+            if (1==state)
+            {
+                NSLog(@"block 获取好友列表成功");
+                
+                [_friendsController setMyData:array];
+                [self presentViewController:_friendsController animated:YES completion:^{
+                    ;
+                }];
+            }
+            else if(0==state)
+            {
+                NSLog(@"block 获取好友列表失败");
+            }
+        }];
+
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

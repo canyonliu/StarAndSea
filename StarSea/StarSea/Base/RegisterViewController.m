@@ -106,13 +106,39 @@
         return;
     }
     
-    NSString* str=[NSString stringWithFormat:@"%@: %@",NSLocalizedString(@"将发送短信至:", nil),self.userPhoneNumber.text];
-    //_str=[NSString stringWithFormat:@"%@",self.userPhoneNumber.text];
-    UIAlertView* alert=[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"确定 手机号码", nil)
-                                                  message:str delegate:self
-                                        cancelButtonTitle:NSLocalizedString(@"Cancle", nil)
-                                        otherButtonTitles:NSLocalizedString(@"OK", nil), nil];
-    [alert show];
+    
+    [SMS_SDK getVerificationCodeBySMSWithPhone:self.userPhoneNumber.text
+                                          zone:@"86"
+                                        result:^(SMS_SDKError *error)
+     {
+         if (!error)
+         {
+             registerDetailVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"registerDetailVC"];
+             registerDetailVC.userPhoneNum = self.userPhoneNumber.text;
+             
+             //[self.navigationController presentViewController:registerDetailVC animated:YES completion:nil];
+             [self.navigationController pushViewController:registerDetailVC animated:YES];
+         }
+         else
+         {
+             UIAlertView* alert=[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"codesenderrtitle", nil)
+                                                           message:[NSString stringWithFormat:@"状态码：%zi ,错误描述：%@",error.errorCode,error.errorDescription]
+                                                          delegate:self
+                                                 cancelButtonTitle:NSLocalizedString(@"sure", nil)
+                                                 otherButtonTitles:nil, nil];
+             [alert show];
+         }
+         
+     }];
+
+    
+//    NSString* str=[NSString stringWithFormat:@"%@: %@",NSLocalizedString(@"将发送短信至:", nil),self.userPhoneNumber.text];
+//    //_str=[NSString stringWithFormat:@"%@",self.userPhoneNumber.text];
+//    UIAlertView* alert=[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"确定 手机号码", nil)
+//                                                  message:str delegate:self
+//                                        cancelButtonTitle:NSLocalizedString(@"Cancle", nil)
+//                                        otherButtonTitles:NSLocalizedString(@"OK", nil), nil];
+//    [alert show];
     
 }
 //#pragma mark -短信验证的相关操作
