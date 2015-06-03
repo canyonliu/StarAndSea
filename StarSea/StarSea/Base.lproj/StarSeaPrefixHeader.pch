@@ -25,20 +25,31 @@ typedef enum{
     SAS_Feedack,
     SAS_logout,
     SAS_GetUserinfo,
-    SAS_SynchProxy,
+    SAS_SynchData,
     SAS_SynchSystemAccount,
     SAS_AddNotes,
     SAS_GetAllNotes,
+    //
+    SAS_ChangePhoneNumber,
+    SAS_ValidateCode,
+    SAS_AddFriend,
+    SAS_DeleteFriend,
+    SAS_SendNotice,
+    SAS_AcceptNotice,
+    SAS_NoticeFeedBack,
+    SAS_AcceptNoticeFeed,
+    SAS_ShowNotice,
+    SAS_UserFeedback
    // SAS_GetSubNewsChannel,
 
 }StarSea_ServerIndex;
 
 
 //主地址
-#define URL_SAS_ServerMajorDomain @"http://192.168.1.104:8081/FIND"
+#define URL_SAS_ServerMajorDomain @"http://192.168.31.211:8081/StarSea/"
 
-#define URL_SAS_Register @""
-#define URL_SAS_Login @""
+#define URL_SAS_Register @"RegistAction.action"
+#define URL_SAS_Login @"LoginAction.action"
 #define URL_SAS_SynchUserInfo @""
 #define URL_SAS_ChangePassword @""
 #define URL_SAS_FindPassword @""
@@ -46,12 +57,30 @@ typedef enum{
 #define URL_SAS_Feedack @""
 #define URL_SAS_logout @""
 #define URL_SAS_GetUserinfo @""
-#define URL_SAS_SynchProxy @""
+#define URL_SAS_SynchData @""
 #define URL_SAS_SynchSystemAccount @""
 #define URL_SAS_AddNotes @""
 #define URL_SAS_GetAllNotes @""
 
+//
+#define URL_SAS_ChangePhoneNumber @""
+#define URL_SAS_Validatecode @""
+#define URL_SAS_AddFriend @""
+#define URL_SAS_DeleteFriend @""
+#define URL_SAS_SendNotice @""
+#define URL_SAS_AcceptNotice @""
+#define URL_SAS_NoticeFeedBack @""
+#define URL_SAS_AcceptNoticeFeed @""
+#define URL_SAS_ShowNotice @""
+#define URL_SAS_UserFeedback @""
 
+
+
+
+
+
+//
+#define DB_FILE_NAME @"StarSea.sqlite"
 
 //短信验证的appkey和appSecret
 #define APPKey @"644858a763af"

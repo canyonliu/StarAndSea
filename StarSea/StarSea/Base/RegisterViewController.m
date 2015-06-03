@@ -115,6 +115,10 @@
          {
              registerDetailVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"registerDetailVC"];
              registerDetailVC.userPhoneNum = self.userPhoneNumber.text;
+             registerDetailVC.userPassword = self.userPassword.text;
+             registerDetailVC.userName = self.userName.text;
+             
+             
              
              //[self.navigationController presentViewController:registerDetailVC animated:YES completion:nil];
              [self.navigationController pushViewController:registerDetailVC animated:YES];

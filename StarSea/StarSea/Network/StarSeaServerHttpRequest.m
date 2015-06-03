@@ -49,9 +49,10 @@
     switch (actionIndex) {
         case SAS_Register:
             //[parser sasRegister:jsonData];
+            [parser sasRegister:jsonData];
             break;
         case SAS_Login:
-            
+            [parser sasLogin:jsonData];
             break;
         case SAS_SynchUserInfo:
             
@@ -74,7 +75,7 @@
         case SAS_GetUserinfo:
             
             break;
-        case SAS_SynchProxy:
+        case SAS_SynchData:
            
             break;
         case SAS_SynchSystemAccount:
@@ -86,6 +87,37 @@
         case SAS_GetAllNotes:
             
             break;
+            
+        case SAS_ChangePhoneNumber:
+            break;
+            
+        case SAS_ValidateCode:
+            
+            break;
+            
+        case SAS_AddFriend:
+            
+            break;
+            
+        case SAS_DeleteFriend:
+            
+            break;
+        case SAS_SendNotice:
+            
+            break;
+        case SAS_AcceptNotice:
+            
+            break;
+        case SAS_AcceptNoticeFeed:
+            
+            break;
+        case SAS_ShowNotice:
+            
+            break;
+        case SAS_UserFeedback:
+            
+            break;
+        
 
         default:
             break;
@@ -127,8 +159,8 @@
         case SAS_GetUserinfo:
             return URL_SAS_GetUserinfo;
             break;
-        case SAS_SynchProxy:
-            return URL_SAS_SynchProxy;
+        case SAS_SynchData:
+            return URL_SAS_SynchData;
             break;
         case SAS_SynchSystemAccount:
             return URL_SAS_SynchSystemAccount;
@@ -139,6 +171,35 @@
         case SAS_GetAllNotes:
             return URL_SAS_GetAllNotes;
             break;
+         //***************************************
+        case SAS_ChangePhoneNumber:
+            return  URL_SAS_ChangePhoneNumber;
+            
+        case SAS_ValidateCode:
+            return URL_SAS_Validatecode;
+            
+        case SAS_AddFriend:
+            return URL_SAS_AddFriend;
+            
+        case SAS_DeleteFriend:
+            return URL_SAS_DeleteFriend;
+            
+        case SAS_SendNotice:
+            
+            return URL_SAS_SendNotice;
+        case SAS_AcceptNotice:
+            
+            return URL_SAS_AcceptNotice;
+        case SAS_AcceptNoticeFeed:
+            
+            return URL_SAS_AcceptNoticeFeed;
+        case SAS_ShowNotice:
+            
+            return URL_SAS_ShowNotice;
+        case SAS_UserFeedback:
+            
+            return URL_SAS_UserFeedback;
+
             
         default:
             break;

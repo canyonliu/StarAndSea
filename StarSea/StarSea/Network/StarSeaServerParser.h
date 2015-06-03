@@ -15,5 +15,5 @@
 
 -(void)sasRegister:(NSData *)jsonData;
 
-
+-(void)sasLogin:(NSData *)jsonData;
 @end

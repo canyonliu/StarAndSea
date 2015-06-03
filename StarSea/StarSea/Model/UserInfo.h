@@ -10,4 +10,15 @@
 
 @interface UserInfo : NSObject
 
+@property(nonatomic,strong)NSString *name;
+
+@property(nonatomic,strong)NSString *phoneNum;
+
+@property(nonatomic,strong)NSString *password;
+
+@property(nonatomic,strong)NSString *userId;
+
+@property(nonatomic,strong)NSString *userPic;
+
+
 @end

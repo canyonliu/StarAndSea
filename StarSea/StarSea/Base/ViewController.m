@@ -188,6 +188,9 @@ static NSString *NoteDeatilCellIdentifier = @"noteDetailcell";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //跳转
+//    MBProgressHUD *hud = [[MBProgressHUD alloc]init];
+//    [Tools showHUD:@"跳转中" andView:tableView andHUD:hud];
+    [Tools checkNetWorking];
     DetailViewController *detailVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"DetailNoticeVC"];
     [self.navigationController pushViewController:detailVC animated:YES];
     
@@ -210,6 +213,8 @@ static NSString *NoteDeatilCellIdentifier = @"noteDetailcell";
     
     
     notesCell.backgroundColor = [UIColor whiteColor];
+    notesCell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
 
     return notesCell;
 }
@@ -231,6 +236,7 @@ static NSString *NoteDeatilCellIdentifier = @"noteDetailcell";
     return _dataArray.count;
 }
 
+//设置section的title
 
 //- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 //

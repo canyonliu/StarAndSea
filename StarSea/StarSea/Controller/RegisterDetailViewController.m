@@ -7,6 +7,9 @@
 //
 
 #import "RegisterDetailViewController.h"
+#import "StarSeaServerInterface.h"
+#import "Tools.h"
+#import "MBProgressHUD.h"
 
 //#import "SMS_MBProgressHUD+Add.h"
 #import <AddressBook/AddressBook.h>
@@ -30,6 +33,8 @@ static int count = 0;
     UIAlertView* _alert3;
     
     UIAlertView *_tryVoiceCallAlertView;
+    
+    MBProgressHUD *hud;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *userWillRegisterPhoneNum;
@@ -41,11 +46,13 @@ static int count = 0;
 @end
 
 @implementation RegisterDetailViewController
-@synthesize userPhoneNum;
+@synthesize userPhoneNum,userPassword,userName;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.userWillRegisterPhoneNum.text = userPhoneNum;
+    
+    
     [self setupTimeAndRepeat];
     //设置返回按钮
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithTitle:@"取消" style:UIBarButtonItemStyleDone target:self action:@selector(backToLoginVC)];
@@ -53,6 +60,14 @@ static int count = 0;
     //设置标题(使用Tools)
     self.navigationController.title = @"电话注册";
     LQCLog(@"传过来的number:%@",userPhoneNum);
+    LQCLog(@"传过来的name:%@",userName);
+    LQCLog(@"传过来的password:%@",userPassword);
+    
+    
+    
+    
+    //添加通知
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(selfNotificationDO:) name:@"StarSea_Register_Notice" object:nil];
     
 }
 
@@ -60,6 +75,53 @@ static int count = 0;
 {
     [super viewWillDisappear:YES];
     self.navigationController.navigationBarHidden = NO;
+}
+
+-(void)selfNotificationDO:(NSNotification *)aNotification
+{
+    if(hud)
+    {
+        [hud hide:YES];
+    }
+    //把携带过来的字典解析出来
+    LQCLog(@"注册====%@",[aNotification.userInfo objectForKey:@"Message"]);
+    //处理notification
+    if ([aNotification.name isEqualToString:@"StarSea_Register_Notice"] && [[aNotification.userInfo objectForKey:@"Message"]isEqualToString:@"成功"])
+    {
+        //本地保存用户相关信息
+        
+        
+        //跳转
+        /**
+         *  @author LQC
+         *
+         *  暂时先注册成功后回到登录页面,以后再改
+         */
+        ViewController* mianVC= [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"MainVC"];
+        
+        
+        
+        //        [[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissViewControllerAnimated:YES completion:^(void){
+        //            [_timer2 invalidate];
+        //            [_timer1 invalidate];
+        //
+        //        }];
+        
+        [self.navigationController popToRootViewControllerAnimated:YES];
+        //        [self.navigationController presentViewController:mianVC animated:YES completion:^{
+        //            //解决等待时间乱跳的问题
+        //            [_timer2 invalidate];
+        //            [_timer1 invalidate];
+        //        }];
+        //self.navigationController.navigationBar.hidden = NO;
+
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"系统繁忙" message:@"请稍后再试" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+    
 }
 
 
@@ -134,20 +196,31 @@ static int count = 0;
     {
         //[[SMS_SDK sharedInstance] commitVerifyCode:self.verifyCodeField.text];
         [SMS_SDK commitVerifyCode:self.verifyCodeField.text result:^(enum SMS_ResponseState state) {
+            //添加等待视图
+            hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+            [Tools showHUD:@"注册中..." andView:self.view andHUD:hud];
+            
             if (1==state)
             {
                 NSLog(@"验证成功");
-                NSString* str=[NSString stringWithFormat:NSLocalizedString(@"verifycoderightmsg", nil)];
-                UIAlertView* alert=[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"verifycoderighttitle", nil)
-                                                              message:str
-                                                             delegate:self
-                                                    cancelButtonTitle:NSLocalizedString(@"sure", nil)
-                                                    otherButtonTitles:nil, nil];
-                [alert show];
-                _alert3=alert;
+                //验证成功后不用提示框;直接上传服务器就好
+                StarSeaServerInterface *_StarSraServer = [StarSeaServerInterface new];
+                [_StarSraServer StarSea_Register_Registername:userName phoneNumber:userPhoneNum passWord:userPassword];
+                
+//                NSString* str=[NSString stringWithFormat:NSLocalizedString(@"verifycoderightmsg", nil)];
+//                UIAlertView* alert=[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"verifycoderighttitle", nil)
+//                                                              message:str
+//                                                             delegate:self
+//                                                    cancelButtonTitle:NSLocalizedString(@"sure", nil)
+//                                                    otherButtonTitles:nil, nil];
+//                [alert show];
+//                _alert3=alert;
             }
             else if(0==state)
             {
+                if(hud){
+                    [hud hide:YES];
+                }
                 NSLog(@"验证失败");
                 NSString* str=[NSString stringWithFormat:NSLocalizedString(@"verifycodeerrormsg", nil)];
                 UIAlertView* alert=[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"verifycodeerrortitle", nil)
@@ -218,7 +291,7 @@ static int count = 0;
         }
         
     }
-    
+    //点击返回
     if (alertView==_alert2) {
         if (0==buttonIndex)
         {
@@ -231,31 +304,17 @@ static int count = 0;
 //            }];
         }
     }
-    
+    //验证成功
     if (alertView==_alert3)
     {
-        /**
-         *  @author LQC
-         *
-         *  暂时先注册成功后回到登录页面,以后再改
-         */
-        ViewController* mianVC= [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"MainVC"];
+        //添加等待视图
+        hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        [Tools showHUD:@"注册中..." andView:self.view andHUD:hud];
         
+        StarSeaServerInterface *_StarSraServer = [StarSeaServerInterface new];
+        [_StarSraServer StarSea_Register_Registername:userName phoneNumber:userPhoneNum passWord:userPassword];
 
         
-//        [[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissViewControllerAnimated:YES completion:^(void){
-//            [_timer2 invalidate];
-//            [_timer1 invalidate];
-//
-//        }];
-        
-        [self.navigationController popToRootViewControllerAnimated:YES];
-//        [self.navigationController presentViewController:mianVC animated:YES completion:^{
-//            //解决等待时间乱跳的问题
-//            [_timer2 invalidate];
-//            [_timer1 invalidate];
-//        }];
-        //self.navigationController.navigationBar.hidden = NO;
     }
     
     if (alertView == _tryVoiceCallAlertView)
@@ -281,6 +340,9 @@ static int count = 0;
     }
     
 }
+
+
+
 
 
 

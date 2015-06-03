@@ -7,10 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserInfo.h"
 
 @interface RegisterDetailViewController : UIViewController<UIAlertViewDelegate>
+
 //用户注册手机号码
 @property(nonatomic ,strong)NSString *userPhoneNum;
+
+@property(nonatomic ,strong)NSString *userName;
+
+@property(nonatomic ,strong)NSString *userPassword;
+
+//@property(nonatomic ,strong)UserInfo *userItem;
+
 
 @property (weak, nonatomic) IBOutlet UITextField *verifyCodeField;
 

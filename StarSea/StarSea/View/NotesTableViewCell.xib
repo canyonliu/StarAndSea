@@ -18,30 +18,30 @@
                         <rect key="frame" x="25" y="0.0" width="270" height="120"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JD-s3-3CL">
-                                <rect key="frame" x="21" y="49" width="120" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LT-ef-AX2">
-                                <rect key="frame" x="21" y="16" width="120" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.15257868420000001" green="0.69045928030000003" blue="0.2506329384" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="21" y="42" width="158" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="inu-KU-tmY">
                                 <rect key="frame" x="202" y="8" width="60" height="60"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmz-AS-Kur">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmz-AS-Kur">
                                 <rect key="frame" x="152" y="91" width="110" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w5w-8p-7Vp">
-                                <rect key="frame" x="8" y="92" width="80" height="20"/>
+                                <rect key="frame" x="8" y="99" width="59" height="13"/>
                                 <color key="backgroundColor" red="0.87726878159999999" green="0.17542276892391878" blue="0.16391721314372243" alpha="0.63" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LT-ef-AX2">
+                                <rect key="frame" x="21" y="8" width="120" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.15257868420000001" green="0.69045928030000003" blue="0.2506329384" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.73848645960000003" green="0.24605007649999999" blue="0.96774384469999997" alpha="0.68000000000000005" colorSpace="calibratedRGB"/>
                     </view>
@@ -53,7 +53,7 @@
                 <outlet property="inviteAddress" destination="Jmz-AS-Kur" id="YBJ-Dx-bIv"/>
                 <outlet property="invitePersonPic" destination="inu-KU-tmY" id="hCB-yg-fPm"/>
             </connections>
-            <point key="canvasLocation" x="274" y="300.5"/>
+            <point key="canvasLocation" x="274" y="300"/>
         </tableViewCell>
     </objects>
 </document>

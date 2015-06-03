@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
+#import "StarSeaServerInterface.h"
+
 #import "ViewController.h"
 #import "Tools.h"
 
@@ -64,6 +66,13 @@
 
 
 - (IBAction)LoginBtn:(id)sender {
+    
+    //验证成功后不用提示框;直接上传服务器就好
+    StarSeaServerInterface *_StarSraServer = [StarSeaServerInterface new];
+    [_StarSraServer StarSea_Login_LoginphoneNumber:self.PhoneNumber.text passWord:self.PassWord.text];
+    
+    
+    
     mainVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"MainVC"];
     /*if([self.PhoneNumber.text isEqualToString:@"lqc"] && [self.PassWord.text isEqualToString:@"123"])
     {*/
@@ -74,6 +83,12 @@
          NSLog(@"tiaozhuan");
    // }
    // NSLog(@"tiaozhuan23333");
+    
+    
+  
+
+    
+    
 
 }
 @end
